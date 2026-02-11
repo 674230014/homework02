@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    background-color: #bfbdbd;
+    color: #000000; 
+}
+
+.wrapper {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    /*background-color: rgb(96, 201, 243);*/
+}
+
+a {
+    color: #3f31da;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+
+.site-header {
+    background-color: #ffffff;
+    color: #080808;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.site-title {
+    font-size: 1.37rem;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.site-subtitle {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #555555;
+}
+
+.social-icons a {
+    font-size: 1rem;
+    color: #080808;
+    font-weight: 600;
+    border: 1px solid #080808;
+    border-radius: 50%;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.social-icons a:hover {
+    background-color: #1942bd;
+    color: #ffffff;
+    border-color: #1942bd;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Navbar Styles */
+
+.main-nav {
+    background-color: #5193f6;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu li a {
+    color: #ffffff;
+    font-size: 0.9rem;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    background-color: #1942bd;
+    color: #ffffff;
+}
+
+/* Hero Saction styles */
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    background-color: #898989;
+    padding: 30px 0;
+    margin-bottom: 0 2px 14px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+
+.hero-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+
+    /*
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    */
+}
+
+.hero-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    backdrop-filter: blur(10px);
+    /* เพิ่มความเบลอพื้นหลังด้านหลังไอเท็ม */
+
+
+    transition: all 0.3s ease;
+
+    /*overflow: hidden; /* ซ่อนส่วนที่เกินขอบเขตของกล่อง */
+}
+
+.hero-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+.hero-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.hero-item p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.hero-item .read-more {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1e8bc3;
+
+    display: inline-block;
+}
+
+.hero-item .read-more:hover {
+    color: #764ba2;
+    text-decoration: none;
+}
+
+.hero-item .read-more::after {
+    content: '→';
+    margin-left: 5px;
+
+    transition: margin-left 0.3s ease;
+}
+
+.hero-item .read-more:hover::after {
+    margin-left: 10px;
+}
