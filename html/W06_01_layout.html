@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayOut</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background-color: #5c9edc;
+            line-height: 1.75;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #d0e2f6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+        }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Workshop: Various Links</h1>
+        <p>เรียนรู้ลิ้งค์หลายรูปแบบ พร้อมตัวอย่างแบบฝึกหัด</p>
+        <!-- card 1 -->
+        <div class="card 1">
+            <h2>1.External Links</h2>
+            <div class="card 2">
+                <a href="https://www.wikipedia.org" target="_blank">Visit Wikipedia</a>
+                <p><mark>target="_blank"</mark> จะเปิดลิ้งค์ในแท็บใหม่</p>
+            </div>
+            <div class="card 2">
+                <a href="https://www.google.com" target="_self">Visit Google</a>
+                <p><mark>target="_self"</mark> จะเปิดลิ้งค์ในแท็บเดิม</p>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card 1">
+            <h2>2.Internal Links & Anchor Links</h2>
+            <pre>&lt;a href="about.html"&gt;About Us&lt;/a&gt; 
+            &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt; 
+            &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;</pre>
+            <a href="#jump">Click to Jump</a>
+            <h3>This is the jump target</h3>
+            <!-- card 3 -->
+        </div>
+        <div class="card 1">
+        </div>
+    </div>
+</body>
+</html>
