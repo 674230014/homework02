@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FEF3FF;
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+
+            margin: 0 auto;
+        }
+
+        .card {
+            background-image: url(../photo/Login.png);
+            width: 390px;
+            height: 844px;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 70px;
+            padding-top:36px;
+        }
+
+        .login-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+
+            margin:0 16px;
+            margin-top: 16px;
+
+        }
+
+        .btn-primary {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            font-size: 24px;
+            text-align: center;
+
+            padding: 8px 16px;
+        }
+
+        .btn-primary.modul-1 {
+            border: 2px solid #00000010;
+        }
+        .btn-primary-user{
+            margin: 0;
+            font-weight: 600;
+        }
+
+
+        .btn-actions {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+
+            margin: 0 16px;
+            margin-top: 86px;
+        }
+
+        .btn-primary.modul-2 {
+            background-color: #834A41;
+        }
+        .btn-primary.modul-2 a{
+        color: #FFB861;
+        }
+
+        .btn-primary.facebook ::after{
+            content: url("photo/Facebook_Logo.png");
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+
+            position: relative;
+            top: 2.5px;
+        }
+
+        .btn-primary.google::after {
+            content: url("photo/google_logo.png");
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+
+            position: relative;
+            top: 2.5px;
+        }
+
+
+        .separator-text {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+
+            margin: 0;
+        }
+        
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+/* =========================================================================== */
+        .auth-text{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .text-link{
+            color: #707BD7;
+            font-size: 28px;
+            margin: 30px 0;
+            text-decoration: underline;
+        }
+        .text-flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+
+<!-- ==========================================หน้าHTML==================================================================== -->
+
+<body>
+    <div class="container">
+        <div class="card">
+
+            <div class="image">
+                <img src="photo/LOGO.png" alt="Photo">
+            </div>
+
+
+                <div class="login-container">
+                    <div class="login-image">
+                        <img src="photo/LOGIN (1).png" alt="Photo">
+                    </div>
+                    <div class="btn-primary modul-1">
+                    <p class="btn-primary-user">Username</p>
+                    </div>
+                </div>
+
+
+                <div class="btn-actions">
+                    <div class="btn-primary modul-2">
+                        <a href="">LOGIN</a>
+                    </div>
+
+                    <p class="separator-text">or</p>
+
+                    <div class="btn-primary facebook">
+                        <a href="">Login with facebook</a>
+                    </div>
+
+                    <div class="btn-primary google">
+                        <a href="">Login with google</a>
+                    </div>
+                </div>
+
+
+                <div class="text-flex">
+                    <p class="auth-text">You are already logged in.</p>
+                    <a href="" class="text-link">Register</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
